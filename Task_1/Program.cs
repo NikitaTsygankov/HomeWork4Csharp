@@ -1,0 +1,16 @@
+﻿Console.Write("Введите число A: ");
+int a = int.Parse(Console.ReadLine());
+Console.Write("Введите число B: ");
+int b = int.Parse(Console.ReadLine());
+int c = 1;
+if (b<1)
+Console.Write("Число B должно быть натуральным\n");
+else
+{
+while (b!=0)
+{
+c = c * a;
+b = b - 1;
+}
+Console.Write($"Число A в натуральной степени B равно {c}");
+}
